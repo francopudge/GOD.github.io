@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOD Master Duel</title>
+    <style>
+      hr {
+        border: 1px solid black;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        position: relative;
+        height: auto; /* Ubah menjadi auto untuk memungkinkan pengguliran */
+        overflow-y: scroll; /* Menambahkan scroll vertikal jika diperlukan */
+        overflow-x: hidden; /* Menonaktifkan scroll horizontal */
+        padding-top: 50px; /* Menambahkan ruang untuk header tetap di atas */
+      }
+
+      .header-box {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: yellow;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 10px;
+        position: fixed; /* Membuat header tetap di atas */
+        top: 0; /* Menempelkan header di bagian atas halaman */
+        left: 0; /* Memastikan header tetap di kiri */
+        z-index: 1000; /* Memastikan header tetap di atas elemen lain */
+      }
+      .header-box .title {
+        margin: 0;
+        padding-left: 30px;
+      }
+      .header-box img {
+        height: 40px;
+        width: auto;
+        padding-right: 20px;
+      }
+      .header-box button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin-left: auto;
+        position: relative;
+      }
+      /* Gaya Dropdown */
+      .dropdown {
+        position: relative;
+      }
+      .dropdown-content {
+        display: none; /* Dropdown dimulai dalam keadaan tersembunyi */
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        z-index: 1;
+        top: 50px; /* Menempatkan dropdown tepat di bawah tombol */
+        right: 0; /* Menjaga dropdown agar berada di sisi kanan tombol */
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .video-container {
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+      }
+      /* Styling untuk konten welcome */
+      .welcome-section {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Kotak header -->
+    <div class="header-box">
+      <div>GOD [Generation Of Duel]</div>
+      <button id="playPauseButton">
+        <img src="play.png" alt="Play" id="playPauseImage" />
+      </button>
+      <div class="dropdown">
+        <!-- Ganti tombol teks dengan gambar titik3.png -->
+        <button id="titikTigaButton">
+          <img src="titik3.png" alt="Titik Tiga" width="30" height="30" />
+        </button>
+        <!-- Konten Dropdown -->
+        <div class="dropdown-content">
+          <a href="#videoSection">Pembukaan</a>
+          <a href="#welcomeSection">Rumah</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container" id="videoSection">
+      <video autoplay loop muted>
+        <source src="op.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Audio Section -->
+    <audio id="ostAudio" src="ost.mp3" loop></audio>
+
+    <!-- Konten utama -->
+    <hr style="border: 1px solid black" />
+    <center id="welcomeSection">
+      <h1>Selamat datang di GOD [Generation Of Duel]</h1>
+      <p>
+        GOD adalah sebuah komunitas atau guild trading card games Yu-Gi-Oh di
+        Indonesia Sebuah tempat dimana kita bisa belajar atau berlatih memainkan
+        sebuah game yg bisa kita temukan di playstore yg bernama Master Duel
+        atau Duel Link
+        <br /><br />
+        Di guild GOD ini kalian akan menemukan sebuah keseruan tersendiri yg
+        mana tidak akan kalian temukan di guild2 lain nya Salah satu yg bisa jd
+        kebanggaan guild ini adalah kebebasan dimana semua anggota bebas untuk
+        mengekspresikan diri mereka sendiri layaknya di rumah sendiri & ini bisa
+        mendorong atau memacu kreativitas anggota untuk bisa mengeluarkan
+        potensi kemampuan terbaik mereka tanpa harus takut oleh aturan2 kalo
+        begini boleh ga kalo begitu di kick gak aman pokoknya karena di guild2
+        GOD itu menjunjung tinggi kreativitas karena yg namanya kreativitas itu
+        tanpa batas jd tidak seharusnya kita membatasi anggota ini itu & biarkan
+        mereka untuk bisa menjadi diri mereka sendiri karena itu yg bikin mereka
+        bisa berkembang
+        <br /><br />
+        Guild GOD ingin menciptakan duelist2 yg kuat baik itu dari segi duel
+        maupun mental Mengapa mental itu penting karena jika kita ikutan suatu
+        tournament atau kompetisi otomatis nanti nya kita akan kena psy war atau
+        bully an dari guild2 lain yg imbas nya akan berdampak kepada menurun nya
+        semangat & performa kita dalam tournament tersebut Oleh karena itu
+        mental itu sangat penting untuk kita latih di guild GOD ini agar misi
+        untuk menciptakan duelist2 yg sempurna bisa terwujud yaitu duelist2 yg
+        kuat dari segi duel & mental Sekedar mengingatkan ejekan atau bully an
+        guild2 lain itu lebih menyakitkan daripada bully an anggota sendiri yg
+        mana bisa kita anggap itu sebuah candaan tapi jika guild2 lain yg
+        melakukan nya itu tidak bisa di anggap lagi sebagai sebuah candaan tapi
+        hinaan yg bisa menjatuhkan nama baik kalian bahkan lebih parah nya lagi
+        nama besar sebuah guild
+        <br /><br />
+        Untuk dari segi mental sudah sekarang kita beralih ke segi duel Untuk
+        mengasah skill duel anggota guild GOD kita mempunyai yg namanya sebuah
+        project liga internal antar divisi dimana semua anggota GOD kita bagi ke
+        beberapa grup atau kelas yg lebih dikenal dgn sebutan divisi Dalam
+        divisi ini kita akan belajar saling diskusi deck atur strategy & latihan
+        secara kompetitif sebagai sebuah team yg mana dalam seminggu sekali tiap
+        weekend akan ada latih tanding dgn divisi2 lain & hasil nya akan di
+        rekap menjadi sebuah klasemen kita data agar kita tau bagaiman
+        perkembangan para anggota dalam seminggu terakhir Mengapa sistem liga
+        karena ini sistem terbaik untuk melatih jiwa kompetitif para anggota
+        dimana para anggota harus bisa mengeluarkan potensi terbaik mereka jika
+        ingin menang & bisa membawa divisi yg mereka pilih menjadi yg terbaik
+        jika divisi mereka berhasil menjadi yg terbaik di liga otomatis anggota2
+        nya juga akan lebih di kenal & mendapatkan popularitas tersendiri
+        sebagai duelist terbaik guild GOD dimana jika mereka ikutan tournament2
+        di luar GOD mereka akan lebih bisa percaya diri & mempunyai keyakinan
+        kuat untuk bisa mendapatkan hasil yg terbaik sebagai perwakilan yg
+        membawa nama guild GOD Jika duelist2 GOD bisa berprestasi di luar guild
+        otomatis nama guild GOD juga akan ikut terkenal & bisa menjadi sebuah
+        magnet tersendiri untuk menarik para anggota2 baru untuk ikutan
+        bergabung bersama guild GOD & bisa menjadi sebuah kekuatan besar di
+        kancah perduelan di Indonesia bahkan dunia
+      </p>
+    </center>
+
+    <script>
+      // Ambil elemen audio, tombol, dan gambar
+      const audio = document.getElementById("ostAudio");
+      const playPauseButton = document.getElementById("playPauseButton");
+      const playPauseImage = document.getElementById("playPauseImage");
+
+      // Fungsi untuk toggle play/pause
+      playPauseButton.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play(); // Putar audio
+          playPauseImage.src = "pause.png"; // Ganti gambar ke pause
+        } else {
+          audio.pause(); // Jeda audio
+          playPauseImage.src = "play.png"; // Ganti gambar ke play
+        }
+      });
+
+      // Tombol titik tiga untuk dropdown
+      const titikTigaButton = document.getElementById("titikTigaButton");
+      const dropdownContent = document.querySelector(".dropdown-content");
+
+      titikTigaButton.addEventListener("click", function () {
+        // Toggle tampilan dropdown ketika tombol titik tiga diklik
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none"; // Menyembunyikan dropdown
+        } else {
+          dropdownContent.style.display = "block"; // Menampilkan dropdown
+        }
+      });
+    </script>
+  </body>
+</html>
